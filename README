@@ -1,0 +1,52 @@
+jtdn
+A very very alpha and very very basic Twitter monitor
+====================
+
+#
+# DESCRIPTION
+#
+
+jtdn uses the Twitter API to live capture tweets that match certain keywords. It can dump these tweets into an SQLite database, print them to STDOUT or both.
+
+The 't' stands for Twitter, but the other letters are a mystery.
+
+#
+# USAGE
+#
+
+jtdn doesn't really do much right now, so the options aren't exactly extensive...
+
+jtdn [--config path] --db path --keywords keywords [--monitor]
+
+
+--config	Use this to specify a different authentication file.
+
+			Authentication files should return a Perl hash containing Twitter API keys and tokens. You need to get these yourself.
+
+			The file should look like this:
+
+				return
+				{
+					token => "<FILL THIS IN>",
+					token_secret => "<FILL THIS IN>",
+					consumer_key => "<FILL THIS IN>",
+					consumer_secret => "<FILL THIS IN>"
+				};
+
+--db 		Specifies the SQLite database.
+
+			If the database file doesn't exist, it will be created and the table initialised.
+
+			If the database does exist, all Tweets will be appended to the end.
+
+--keywords	A list of keywords to filter.
+
+			Can be one word, or a list in quote marks.
+
+--monitor	Outputs all matching Tweets to STDOUT.
+
+#
+# KNOWN BUGS
+#
+
+Oh god where do I even start.
