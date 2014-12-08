@@ -1,5 +1,10 @@
-#!/usr/bin/perl
-# jTDN - Twitter scraper, very very very alpha.
+#!/usr/bin/env perl
+
+# jtdn
+#
+# Tweet scraper. Plug one end into Twitter, the other into an SQLite database, and turn on the power.
+#
+# Alpha as fuck.
 
 use strict;
 use utf8;
