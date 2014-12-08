@@ -14,8 +14,6 @@ The 't' stands for Twitter, but the other letters are a mystery.
 # USAGE
 #
 
-jtdn doesn't really do much right now, so the options aren't exactly extensive...
-
 jtdn [--config path] --db path --keywords keywords [--monitor] [--no-rt]
 
 
