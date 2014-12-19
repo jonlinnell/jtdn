@@ -34,6 +34,7 @@ The file should look like this:
 	};
 
 **--db**
+
 Specifies the SQLite database. Currently mandatory. Set this to something in /tmp if you really don't need it.
 
 If the database file doesn't exist, it will be created and the table initialised.
@@ -41,14 +42,17 @@ If the database file doesn't exist, it will be created and the table initialised
 If the database does exist, all Tweets will be appended to the end of the table.
 
 **--keywords**
+
 A list of keywords to filter.
 
 Can be one word, or a list of terms. Must be in quotes.
 
 **--monitor**
+
 Print Tweets to STDOUT in realtime.
 
 **--no-rt**
+
 Omit quote retweets (i.e. any tweet that begins with 'RT .)
 
 KNOWN BUGS
