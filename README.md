@@ -1,25 +1,25 @@
-jtdn
+#
+#jtdn
+#
 A very very alpha and very very basic Twitter monitor
 ====================
 
-#
+
 # DESCRIPTION
-#
+
 
 jtdn uses the Twitter API to live capture tweets that match certain keywords. It dumps these tweets into an SQLite database, and optionally prints them to STDOUT.
 
-The 't' stands for Twitter, but the other letters are a mystery.
+The 't' stands for Twitter, but the meanings of the other letters are a mystery.
 
-#
 # USAGE
-#
 
 jtdn [--config path] --db path --keywords keywords [--monitor] [--no-rt]
 
 
 --config	Use this to specify a different authentication file.
 
-			If not specified, jtdn will use auth.conf in the current directory.
+			If not specified, jtdn will use 'auth.conf' in the current directory.
 
 			Authentication files should return a Perl hash containing OAuth/Twitter API keys and tokens. You need to get these yourself.
 
@@ -47,9 +47,7 @@ jtdn [--config path] --db path --keywords keywords [--monitor] [--no-rt]
 
 --no-rt		Omit quote retweets (i.e. any tweet that begins with 'RT .)
 
-#
 # KNOWN BUGS
-#
 
 Where do I even start.
 
