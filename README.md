@@ -1,25 +1,23 @@
 
-jtdn
+Tweetcap
 ==============
 A data live-capture tool for Twitter.
 
 DESCRIPTION
 --------------
 
-jtdn uses the Twitter API to live capture tweets that match certain keywords. It dumps these tweets into an SQLite database, and optionally prints them to STDOUT.
-
-The 't' stands for Twitter, but the meanings of the other letters are a mystery.
+Uses the Twitter API to live capture tweets that match certain keywords. It dumps these tweets into an SQLite database, and optionally prints them to STDOUT.
 
 USAGE
 --------------
 
-	jtdn [--config path] --db path --keywords keywords [--monitor] [--no-rt]
+	tweetcap.pl [--config path] --db path --keywords keywords [--monitor] [--no-rt]
 
 **--config**
 
 Use this to specify a different authentication file.
 
-If not specified, jtdn will use 'auth.conf' in the current directory.
+If not specified, tweetcap will use 'auth.conf' in the current directory.
 
 Authentication files should return a Perl hash containing OAuth/Twitter API keys and tokens. You need to get these yourself.
 
