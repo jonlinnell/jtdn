@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 
-# jtdn
+# tweetcap
 #
 # Tweet scraper. Plug one end into Twitter, the other into an SQLite database, and turn on the power.
 
@@ -35,7 +35,7 @@ my $table_seed_sql =
 		text			VARCHAR(160)
 	);";
 
-#	jtdn creates a 160-character field for storing Tweet text, in order not to truncate the text in the case of
+#	tweetcap creates a 160-character field for storing Tweet text, in order not to truncate the text in the case of
 #	a badly interpretted HTML character or something.
 
 ###################################
